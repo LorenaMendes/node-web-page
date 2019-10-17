@@ -18,7 +18,7 @@
 		<h1 class="logo">NodeWebPage - Especializada em Soluções Digitais</h1>
 		<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
 		<nav class="menu">
-			<a class="btn-close">x</a>
+			<a class="btn-close"><i class="fa fa-times"></i></a>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Cliente</a></li>
@@ -29,5 +29,55 @@
 			</ul>
 		</nav>
 	</header>
+	<div class="banner">
+		<div class="title">
+			<h2>OUSE INOVAR!</h2>
+			<h3>Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores</h3>
+		</div>
+		<div class="buttons">
+			<button class="btn-cadastrar"> Cadastrar <i class="fa fa-arrow-circle-right"></i></button>
+			<button class="btn-sobre"> Sobre <i class="fa fa-question-circle"></i></button>
+		</div>
+	</div>
+	<main class="servicos">
+		<article class="servico">
+			<a href="#"><img src="img/criacoes.jpg" alt="Campanhas Publicitárias"></a>
+			<div class="inner">
+				<a href="#">Campanhas Publicitárias</a>
+				<h4>Impressos, VTs e Jingles</h4>
+				<p>Se você está precisando de criação de algum material em específico, procure ajuda de nossos profissionais.
+				Eles farão toda a campanha publicitária. VT, outdoor, folder, anúncio e todo o marketing da empresa no mais alto padrão de qualidade.</p>
+			</div>
+		</article>
+		<article class="servico">
+			<a href="#"><img src="img/md.jpg" alt="Marketing Digital"></a>
+			<div class="inner">
+				<a href="#">Marketing Digital</a>
+				<h4>Administração de Redes Sociais</h4>
+				<p>Como agência de publicidade, aplicamos estratégias nos meios digitais para que o seu negócio seja visto por milhões de usuários.
+				O Brasil é o 5º país mais conectado do mundo. Por este motivo, o seu negócio não pode ficar de fora do mercado digital.</p>
+			</div>
+		</article>
+		<article class="servico">
+			<a href="#"><img src="img/cs.jpg" alt="Criação de Sites"></a>
+			<div class="inner">
+				<a href="#">Criação de Sites</a>
+				<h4>Sites Administráveis</h4>
+				<p>Agora você pode administrar seu site quando e como quiser.
+				Seu site atualizado, com seus últimos produtos, integração com as redes sociais. Agora é possível!</p>
+			</div>
+		</article>
+	</main>
+	<!-- JQUERY -->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>
+		$(".btn-menu").click(function() {
+			$(".menu").show();
+		});
+
+		$(".btn-close").click(function() {
+			$(".menu").hide();
+		});
+	</script>
 </body>
 </html>
